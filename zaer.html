@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        button {
+            padding: 15px 30px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>مرحبًا بك في موقعنا</h1>
+        <p>اضغط على الزر أدناه للدخول إلى الدردشة مع البوت</p>
+        <button onclick="goToChat()">ادخل على الدردشة مع البوت</button>
+    </div>
+
+    <script>
+        function goToChat() {
+            // الانتقال إلى صفحة الدردشة
+            window.location.href = "chatbot.html";
+        }
+    </script>
+
+</body></html>
